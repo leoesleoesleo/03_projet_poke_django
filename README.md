@@ -114,7 +114,7 @@ Se crean 3 funciones recursivas que consumen los servicios y se encargan de reto
 	<li><strong>list_evolution()</strong> Consume el servicio de evolution-chain y retorna dos listas, la primera es la lista de los nombres 
 		de los pokemon y la segunda otra lista con las evoluciones relacionadas. 
 	</li>
-	<li><strong>list_pokemon_details()</strong>Consume el servicio pokemon y retorna 3 listas relacionadas con los detalles del pokemon como
+	<li><strong>list_pokemon_details()</strong> Consume el servicio pokemon y retorna 3 listas relacionadas con los detalles del pokemon como
     la altura, el peso y las estadísticas. 
 		Estos datos hacen parte de los detalles de los pokemon. 
 	</li>
