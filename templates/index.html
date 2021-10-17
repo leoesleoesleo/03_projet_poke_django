@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>{% block titulo %}inicio{% endblock titulo%}</title>
+</head>
+
+<body>
+
+	<header>		
+		<h1>Poke Django</h1>
+	</header>
+
+	{% block cuerpo %}
+	<section>
+        <div style="border-color:#CC0000;">
+            <h3>Listar Pokemon <small style="color:orange;">PokeAPI</small></h3>
+            <a href="{% url 'pokemon_api_generate' %}">Generar Pokemon desde PokeAPI</a>
+            {% if poke_query %}
+            <table border="1px">
+                <thead style="color:gray">
+                    <tr>
+                        <th>id Pokemon</th>
+                        <th>Name</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Evolutions</th>
+                        <th>Stat</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody style="color:gray">
+                    {% for poke in poke_query %}
+                        <tr>
+                            <td>{{ poke.id_pokemon }}</td>
+                            <td>{{ poke.name }}</td>
+                            <td>{{ poke.height }}</td>
+                            <td>{{ poke.weight }}</td>
+                            <td>{{ poke.evolutions }}</td>
+                            <td>{{ poke.stat }}</td>
+                            <td><a href="{% url 'update_pokemon' poke.id_table %}">Editar</a> - <a href="{% url 'delete_pokemon' poke.id_table %}">Eliminar</a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p style="color:gray;">No hay pokemon generados</p>
+            {% endif %}	
+        </div>		
+	</section>
+	{% endblock cuerpo %}
+
+</body>
+
+
+</html>

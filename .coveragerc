@@ -1,0 +1,18 @@
+[run]
+omit =
+    */migrations/*
+    */tests/*
+    */test/*
+    */tests.py
+	pokemon/apps.py
+	poke_django/urls.py
+	poke_django/utils/healthz.py	
+    pokemon_django/settings.py
+    poke_django/wsgi.py
+	poke_django/middleware.py
+	poke_django/asgi.py
+	manage.py
+	gunicorn_config.py
+	pokemon_django/utils/__init__.py
+	pokemon_django/utils/healthz.py
+	pokemon_django/asgi.py
