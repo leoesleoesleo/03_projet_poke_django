@@ -47,10 +47,6 @@ grupos de huevos y mucho, mucho más.
     ```
     python manage.py migrate
     ```
-- Cargar datos iniciales
-    ```
-    python manage.py loaddata gestorComidas/fixtures/posts-data.json
-    ```
     
 - Validar cobertura de la aplicación  
     ```
