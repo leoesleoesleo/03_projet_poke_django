@@ -64,6 +64,11 @@ grupos de huevos y mucho, mucho más.
     ```sh
     127.0.0.1:8000
     ```
+#### Ejemplo
+<div>
+	<img height="400" src="https://leoesleoesleo.github.io/imagenes/indexpokedjango.png" alt="PokeAPI">
+</div>  
+
 
 ##
 ## MANUAL TÉCNICO
@@ -136,11 +141,11 @@ Promueve el acoplamiento débil y la estricta separación entre las piezas de la
 ## Diagrama E-R
 
 <p align="center">
-  <a href="#"><img src="https://leoesleoesleo.github.io/imagenes/diagrama_er.png"></a>
+  <a href="#"><img src="https://leoesleoesleo.github.io/imagenes/modelo_pokedjango.PNG"></a>
 </p>
 
 ## Cobertura
 
 <p align="center">
-  <a href="#"><img src="https://leoesleoesleo.github.io/imagenes/cobertura.png"></a>
+  <a href="#"><img src="https://leoesleoesleo.github.io/imagenes/covertura_pokedjango.PNG"></a>
 </p>
