@@ -101,9 +101,9 @@ Requerimientos Funcionales
 Requerimientos no Funcionales
 -	Las funciones son recursivas para escalar los datos en caso que el servicio reciba una lista de pokemon.
 -	Las pruebas unitarias son escalables – (pytest)
--	La Cobertura del programa llega a un 95% (Coverage)
--	El programa se somete a un verificador de código fuente para una mejor calidad. 
--	Las Funciones y métodos están comentados.
+-	La cobertura del programa llega a un 83% (Coverage)
+-	El programa se somete a un verificador de código fuente para una mejor calidad (pylint)
+-	Las funciones y métodos están comentados.
 -	El programa proporciona logs de información y errores.
 -	El programa cuenta con manual de instalación.
 
@@ -137,7 +137,7 @@ Promueve el acoplamiento débil y la estricta separación entre las piezas de la
 ## Diagrama E-R
 
 <p align="center">
-  <a href="#"><img src="https://leoesleoesleo.github.io/imagenes/modelo_pokedjango.PNG"></a>
+  <a href="#"><img height="400" src="https://leoesleoesleo.github.io/imagenes/modelo_pokedjango.PNG"></a>
 </p>
 
 ## Cobertura
