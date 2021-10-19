@@ -98,14 +98,11 @@ def generate_pokemon(request):
     """
     if request.method == 'GET':
         form = Formpokemon()
-        contexto = {
-            'form' : form
-        }
     else:
         form = Formpokemon(request.POST)
-        contexto = {
-            'form' : form
-        }
+    contexto = {
+        'form' : form
+    }
     if form.is_valid():
         pok = form.save(commit=False)
         id_poke = form.cleaned_data['id_pokemon']
@@ -126,9 +123,6 @@ def generate_pokemon(request):
             log.error(msg)
 
         return redirect('index')
-    else:
-        msg = "nvalid form"
-        log.error(msg)
     return render(request,'formcreate.html',contexto)
 
 def pokemon_list(request):
@@ -146,7 +140,7 @@ def pokemon_list(request):
 
 class Pokemon_update(UpdateView):
 	"""
-	Edita el Pokemon para el rol admin
+	Edit the saved Pokemon of the pokeapi query
 	"""
 	model = Pokemon
 	form_class = Formpokemon
@@ -155,7 +149,7 @@ class Pokemon_update(UpdateView):
 
 class Pokemon_delete(DeleteView):
 	"""
-	Elimina el Pokemon para el rol admin
+	remove the saved Pokemon of the pokeapi query
 	"""
 	model = Pokemon
 	form_class = Formpokemon
