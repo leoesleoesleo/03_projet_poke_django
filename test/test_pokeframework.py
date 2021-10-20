@@ -38,7 +38,7 @@ class UrlsTest(TestCase):
         self.client = Client()
 
     @pytest.mark.django_db
-    def test_ingreso_admin(self):
+    def test_pokemon_api_generate(self):
         """
         test url pokemon_api_generate
         """
@@ -46,7 +46,7 @@ class UrlsTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
     @pytest.mark.django_db
-    def test_ingreso_usuario(self):
+    def test_pokemon_list(self):
         """
         test url pokemon_list
         """
