@@ -23,7 +23,7 @@ grupos de huevos y mucho, mucho más.
 
 - Clonar repositorio
 	```
-	git clone https://github.com/leoesleoesleo/poke_django.git
+	git clone https://github.com/leoesleoesleo/03_projet_poke_django.git
 	```
 - Crear entorno virtual
 
